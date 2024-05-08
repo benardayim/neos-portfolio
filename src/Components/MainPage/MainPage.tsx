@@ -68,7 +68,7 @@ function MainPage() {
             
             timeline.to(greeting.chars, { yPercent: 100, stagger: .04 }); //, "+=.5"
             
-            // Arum Ajans
+            // İsim
             let name = new TextSplitter({ target: refs.name.current });
             reverts.push(name);
             timeline.set(name.chars, { yPercent: -100 }, "<");
