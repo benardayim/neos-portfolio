@@ -1,0 +1,31 @@
+.NavigationBar {
+    position: absolute;
+    right: 7em;
+    top: 50%;
+    translate: 0 -50%;
+
+    height: 80%;
+
+    svg {
+        height: 100%;
+    }
+
+    .NavigationLinks {
+        position: absolute;
+        inset: 0;
+
+        span {
+            position: absolute;
+
+            color: white;
+
+            text-align: end;
+            font-family: "Montserrat", Arial, Helvetica, sans-serif;
+
+            translate: -100% 0;
+
+            pointer-events: all;
+            cursor: pointer;
+        }
+    }
+}

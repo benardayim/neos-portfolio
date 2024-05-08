@@ -1,0 +1,33 @@
+.BackgroundLights {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+.Light {
+    position: absolute;
+    translate: -50% -50%;
+
+    width: 10em;
+    height: 50em;
+    
+    // box-sizing: content-box;
+    // padding: 2em;
+    // background: radial-gradient(closest-side ellipse at center, var(--color), transparent);
+    background-color: var(--color, white);
+
+    filter: blur(128px);
+
+    opacity: .15;
+
+    animation: updown 10s linear infinite alternate var(--offsetTime, 0);
+
+    @keyframes updown {
+        0% {
+            transform: rotate(45deg) translateX(var(--offsetX, 0)) translateY(var(--startY, -100px));
+        }
+        100% {
+            transform: rotate(45deg) translateX(var(--offsetX, 0)) translateY(var(--endY, 300px));
+        }
+    }
+}
