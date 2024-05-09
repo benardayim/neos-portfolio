@@ -11,9 +11,6 @@
     width: 10em;
     height: 50em;
     
-    // box-sizing: content-box;
-    // padding: 2em;
-    // background: radial-gradient(closest-side ellipse at center, var(--color), transparent);
     background-color: var(--color, white);
 
     filter: blur(128px);
